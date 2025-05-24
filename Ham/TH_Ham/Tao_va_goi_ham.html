@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Tạo và gọi hàm</title>
+</head>
+<body>
+<script>
+  function processConfirn(answer) { // định nghĩa một tên hàm processConfirn,
+                                    // nhận vào một tham số tên: answer
+                                    // answer sẽ là giá trị boolean (true hoặc false) nhận được từ hộp thoại xác nhận (dòng sau).
+    let result = "";  // tạo một biến cục bộ  tên là result, khởi tạo bằng chuỗi rỗng
+                      // biến này sẽ được  dùng để lưu  kết quả dựa trên answer
+    if (answer){   //dung lệnh if để kiểm tra xem answer có phải true hay không
+      result = "Excellent. we'll play a nice game of chess."; // nếu  ansewer la true  gan chuoi "Excellent. we'll play a nice game of chess." vào biến result.
+    }else{
+      result = "Maybe later then. ";
+    }return result; // Kết thúc lệnh if...else, và trả về biến result cho nơi gọi hàm.
+  }
+  let  confirmAnswer = confirm ("Shall we play a game?"); // Hiển thị một hộp thoại xác nhận (confirm box) với câu hỏi: “Shall we play a game?”
+  let theAnswer = processConfirn(confirmAnswer);// Gọi hàm processConfirn với đối số là confirmAnswer, và gán kết quả trả về vào biến theAnswer.
+  alert (theAnswer); // Hiển thị nội dung của theAnswer bằng một hộp thoại cảnh báo (alert) trên màn hình.
+</script>
+</body>
+</html>

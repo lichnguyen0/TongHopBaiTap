@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<p>
+  <label> Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+         oninput="temperatureConverter(this.value)"
+         onchange="temperatureConverter(this.value)"> <!--Tao mot the input de nhap du lieu cho nguoi dung-->
+</p>
+<p>Celsius: <span id ="outputCelsius" ></span></p>   <!-- Đây là đoạn hiển thị kết quả:  "Celsius:" là văn bản tĩnh.-->
+                                                    <!-- là nơi JavaScript sẽ hiển thị kết quả chuyển đổi (từ Fahrenheit sang Celsius).-->
+
+
+<script>
+function temperatureConverter(valNum) { //Định nghĩa một hàm tên là temperatureConverter,
+                                       // nhận vào một tham số valNum (giá trị người dùng nhập).
+  let value = parseFloat(valNum);   //Chuyển đổi valNum (chuỗi ký tự) thành số thực (float) để đảm bảo tính toán đúng.
+  document.getElementById("outputCelsius").innerHTML = (valNum-32)/1.8;  //Tính toán chuyển đổi từ độ Fahrenheit sang độ Celsius:
+}                                                                        //Rồi gán kết quả vào nội dung của thẻ <span id="outputCelsius">
+                                                                         // để hiển thị ra màn hình.
+
+</script>
+
+</body>
+</html>

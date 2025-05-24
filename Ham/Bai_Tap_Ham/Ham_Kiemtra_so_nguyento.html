@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+<h2>Kiểm tra số nguyên tố</h2>
+<input type="number" id="num">
+<button onclick="kiemtra()">kiem tra</button>
+<p id="result"></p>
+<script>
+    function isprime(n) {   // Định nghĩa một hàm tên là isprime nhận đầu vào n (một số)
+                            // để kiểm tra xem n có phải số nguyên tố hay không.
+
+
+      if (n <= 1) return false; // Nếu số n nhỏ hơn hoặc bằng 1, trả về false (không phải số nguyên tố),
+                                // vì số nguyên tố là số lớn hơn 1.
+        for (let i = 2; i <= Math.sqrt(n); i++) {  //Vòng lặp từ i = 2 đến i bằng căn bậc hai của n.
+                                                   //Tại sao chỉ đến căn bậc hai? Vì nếu có ước số nào lớn hơn căn bậc hai thì sẽ có ước số
+                                                   //tương ứng nhỏ hơn căn bậc hai, nên kiểm tra đến đây là đủ.
+            if (n % i === 0)  return false;        //Nếu n chia hết cho i (dư bằng 0), tức là n không phải số nguyên tố nên trả về false.
+
+        }
+        return true;                               //Nếu vòng lặp chạy hết mà không tìm thấy ước số nào thì trả về true, tức n là số nguyên tố.
+
+    }
+
+    function kiemtra() { //Định nghĩa hàm kiemtra, được gọi khi người dùng nhấn nút kiểm tra.
+        let n = +document.getElementById('num').value;  //Lấy giá trị nhập vào từ ô <input> có id num. Dấu + ở trước dùng để ép kiểu sang số (từ chuỗi sang số).
+        let ketqua = isprime(n)  //Sử dụng toán tử điều kiện (ternary):
+            ? n + 'la so nguyen to'  //Nếu isprime(n) trả về true (số nguyên tố) thì ketqua là chuỗi "n la so nguyen to".
+            : n + 'khong la so nguyen to '  //Nếu isprime(n) trả về false thì ketqua là chuỗi "n khong la so nguyen to ".
+        document.getElementById('result').innerHTML = ketqua; //Cập nhật nội dung bên trong phần tử
+                                                              // có id result bằng giá trị ketqua (hiển thị kết quả cho người dùng xem).
+    }
+</script>
+</body>
+</html>

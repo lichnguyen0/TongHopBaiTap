@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<p>Chuyển đổi feet sang meters</p>
+<input type="number" id="number">
+<select id="from">
+  <option value="feet">feet</option>
+  <option value="meters">meters</option>
+</select>
+
+<select id="to">
+  <option value=meters"">meters</option>
+  <option value="feet">feet</option>
+</select>
+<button onclick="chuyendoi()">ketqua</button>
+<script>
+  function chuyendoi() {
+    let number = document.getElementById("number").value;
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+    let luutru;
+    if(from=="meet"&& to === "feet"){
+        luutru = 3.297* number;
+    }else if(from=="feet"&& to  === "meters"){
+        luutru = 0.305 * number
+    }
+    luutru = 0.305*number
+
+  else{ luutru= number;
+  }
+  document.getElementById("luutru").innerHTML= number + " "+from+" = "+luutru+ " "+ to
+}
+
+</script>
+</body>
+</html>

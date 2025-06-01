@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập hai số a và b, kiểm tra xem a có chia hết cho b hay không.</title>
+</head>
+<body>
+<label>Nhập A:<input type="number" id="nhap1"> </label>
+<label>Nhập B <input type="number" id="nhap2"> </label>
+<button onclick="test()">Kiem tra</button>
+<p id="ketqua"></p>
+<script>
+    function test() {
+        let A = document.getElementById('nhap1').value;
+        let B = document.getElementById('nhap2').value;
+        let ketqua = document.getElementById('ketqua').value;
+        if (A % B === 0) {
+            document.write(A, " ", "chia hết cho ", B);
+        } else {
+            document.write(A, " ", "không chia het cho ", B)
+        }
+    }
+</script>
+</body>
+</html>

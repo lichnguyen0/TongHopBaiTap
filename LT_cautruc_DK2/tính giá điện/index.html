@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện.</title>
+</head>
+<body>
+<h2>Nhập số điện tiêu thụ (kWh):</h2>
+<input type="number" id="kw" min="0"/>
+<button onclick="tinhTienDien()">Tính tiền điện</button>
+
+<p id="result"></p>
+
+<script>
+  function tinhTienDien() {
+    const kw = parseInt(document.getElementById('kw').value, 10);
+    if (isNaN(kw) || kw < 0) {
+      alert('Vui lòng nhập số điện hợp lệ!');
+      return;
+    }
+
+    let tien = 0;
+    let tinh = kw;
+
+    if (tinh > 300) {
+      tien += (tinh - 300) * 3500;
+      tinh = 300;
+    }
+    if (tinh > 200) {
+      tien += (tinh- 200) * 3000;
+      tinh = 200;
+    }
+    if (tinh > 100) {
+      tien += (tinh - 100) * 2500;
+      tinh = 100;
+    }
+    if (tinh > 50) {
+      tien += (tinh - 50) * 2000;
+      tinh = 50;
+    }
+    if (tinh > 0) {
+      tien += tinh * 1500;
+    }
+
+    document.getElementById('result').textContent = "Tiền điện: "+ tien+ "VNĐ";
+  }
+</script>
+</body>
+</html>

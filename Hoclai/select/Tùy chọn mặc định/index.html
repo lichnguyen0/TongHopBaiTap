@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tùy chọn mặc định</title>
+</head>
+<body>
+<!--Giải thích:
+disabled: không cho người dùng chọn dòng này.
+selected: chọn dòng này làm mặc định khi mở form.
+value="": không có giá trị, để tránh gửi lên server nếu không chọn gì.-->
+
+<form>
+  <label for="gender">Chọn giới tính</label>
+  <select name="gender" id="gender">
+    <option value="" disabled selected>Vui lòng chọn</option>
+    <option value="nam">Nam</option>
+    <option value="nu">Nữ</option>
+    <option value="khac">Khác</option>
+
+  </select>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nút bấm có sự kiện JavaScript</title>
+</head>
+<body>
+<h3>
+  ghi nhớ:  Khi nào thì nên đặt input và button trong form?
+   -Khi bạn muốn thu thập dữ liệu người dùng và gửi đi (qua JavaScript hoặc HTTP).
+   - Khi bạn dùng nút button type="submit" để gửi form.
+
+  Khi nào không cần đặt trong form?
+  - Nếu bạn chỉ dùng button để gọi JavaScript và không gửi dữ liệu gì.
+  - Nếu bạn dùng input chỉ để hiển thị, lọc tạm thời, hoặc làm chức năng nội bộ (ví dụ lọc danh sách theo từ khóa).
+
+</h3>
+<button onclick="thongbao()">click me</button>
+
+<script>
+  function thongbao() {
+   alert ("bạn đã bấm nút");
+  }
+</script>
+
+<!-- Giải thích:
+- onclick="thongBao()": Gọi hàm thongBao() khi nút được bấm.
+- alert(...): Dùng để hiển thị hộp thoại thông báo đơn giản.
+-->
+</body>
+</html>

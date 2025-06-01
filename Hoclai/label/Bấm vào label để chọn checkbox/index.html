@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bấm vào label để chọn checkbox</title>
+</head>
+<body>
+<!--
+Giải thích:
+Mỗi checkbox có một id riêng (ví dụ: hobby1, hobby2,...).
+Mỗi <label> dùng thuộc tính for để liên kết tới id của checkbox.
+Nhờ đó, khi người dùng bấm vào chữ như "Đọc sách", checkbox tương ứng sẽ được chọn →
+giúp tăng trải nghiệm người dùng và hỗ trợ người dùng thiết bị trợ năng.
+-->
+
+<h2>chọn sở thích của bạn</h2>
+<form action="#" method="post">
+
+  <input type="checkbox" id="hobby1" name="hobby" value="doc sach">
+  <label for="hobby1">doc sach</label>
+
+  <input type="checkbox" id ="hobby2" name="hobby" value="nghe nhac">
+  <label for="hobby2">Nghe nhac</label>
+
+  <input type="checkbox" id ="hobby3" name="hobby" value="the thao">
+  <label for="hobby3">The thao</label>
+
+  <input type="checkbox" id ="hobby4" name="hobby" value="du lich">
+  <label for="hobby4"> du lich</label>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video không có thanh điều khiển (no controls)</title>
+</head>
+<body>
+<!--
+Giải thích:
+controls bị loại bỏ: Không hiển thị thanh điều khiển mặc định
+muted: Cho phép video tự phát nếu bạn thêm autoplay sau này
+onclick="toggleVideo()": Gọi hàm JavaScript khi bấm nút
+video.paused: Kiểm tra video có đang dừng không
+video.play() / video.pause(): Bắt đầu hoặc dừng video bằng JS -->
+
+<h2>Video không có controls</h2>
+
+<!-- Video không có controls -->
+<video id="myVideo" width="640" height="360" muted>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Trình duyệt không hỗ trợ thẻ video.
+</video>
+
+<!-- Nút điều khiển -->
+<br><br>
+<button onclick="toggleVideo()">Phát / Dừng</button>
+
+<script>
+  const video = document.getElementById("myVideo");
+
+  function toggleVideo() {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
+</script>
+</body>
+</html>

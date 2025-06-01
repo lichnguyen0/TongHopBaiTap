@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhóm tùy chọn với <optgroup></title>
+</head>
+<body>
+<!--
+Giải thích:
+<optgroup> dùng để nhóm các lựa chọn lại theo chủ đề.
+
+label="..." là tiêu đề hiển thị cho nhóm (không chọn được).
+
+Các <option> bên trong vẫn hoạt động bình thường.
+
+Cấu trúc rõ ràng hơn, dễ nhìn và dễ sử dụng hơn cho danh sách dài.
+-->
+<form>
+  <label for="monhoc">Chọn nghành học</label> <br>
+  <select name="monhoc" id="monhoc">
+    <optgroup label="Khoa học tự nhiên">
+      <option value="toan">Toán</option>
+      <option value="ly">Lý</option>
+      <option value="hoa">Hoá</option>
+    </optgroup>
+    <optgroup label="khoa học xã hội">
+      <option value="van">Văn</option>
+      <option value="su">Sử </option>
+      <option value="dia">Địa</option>
+    </optgroup>
+  </select>
+</form>
+</body>
+</html>

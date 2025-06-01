@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Form đăng ký</title>
+</head>
+<body>
+<!--  Giải thích nhanh:
+method="post": gửi dữ liệu ẩn, an toàn hơn.
+action="#": không gửi đi đâu cả (test). Nếu có server xử lý thì thay bằng URL xử lý.
+required: bắt buộc người dùng nhập trước khi gửi.
+label for="...": liên kết nhãn với ô nhập.-->
+
+<h3>đăng ký tài khoản</h3>
+<form action="#" method="post"></form>
+
+<label for="ten">Nhập tên</label> <br>
+<input type="text" id="ten" name="ten" required> <br>
+
+<label for="email">Nhập email</label> <br>
+<input type="email" id="email" name="email" required> <br>
+
+<label for="password">Nhập mật khẩu</label> <br>
+<input type="password" id="password" name="password" required> <br>
+
+<button type="submit"> Đăng ký</button>
+</body>
+</html>

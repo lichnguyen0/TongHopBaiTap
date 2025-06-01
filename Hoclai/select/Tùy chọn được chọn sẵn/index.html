@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tùy chọn được chọn sẵn</title>
+</head>
+<body>
+<!--Giải thích:
+selected được thêm vào <option> của TP.HCM, giúp nó được chọn sẵn khi trang vừa tải.
+value="tphcm" sẽ là giá trị được gửi đi khi form được submit (nếu người dùng không đổi lựa chọn).
+-->
+<form>
+  <label for="city">Chọn tỉnh/thành phố:</label><br>
+  <select id="city" name="city">
+    <option value="hanoi">Hà Nội</option>
+    <option value="danang">Đà Nẵng</option>
+    <option value="tphcm" selected>TP.HCM</option>
+  </select>
+</form>
+</body>
+</html>

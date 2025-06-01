@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Nhập</title>
+</head>
+<body>
+<!--
+Giải thích:
+<form action="#"   dùng để giả lập việc gửi dữ liệu, không chuyển hướng.
+method="post">     phương thức gửi dữ liệu (an toàn hơn get).
+<input type="text">	Nhập tên đăng nhập
+<input type="password">	Nhập mật khẩu (ẩn ký tự)
+<button type="submit">	Gửi biểu mẫu
+
+ Giải thích từng thành phần:
+<input>	  Thẻ HTML để tạo trường nhập liệu (input field). Đây là thẻ tự đóng (self-closing).
+type="text"	   Xác định loại input là text, tức là ô nhập một dòng dành cho chữ, số, ký tự.
+id="username"  Định danh duy nhất cho phần tử trong trang, dùng để liên kết với <label> hoặc để JavaScript thao tác
+name="username"	  Là tên của trường dữ liệu, rất quan trọng khi gửi form —
+ thiếu cái này dữ liệu người dùng nhập sẽ không được gán theo tên này gửi lên server.
+-->
+<h2>Đăng nhập</h2>
+<form action="#" method="post">
+  <label for="username">Tên đăng nhập:</label><br>
+  <input type="text" id="username" name="thường đặt tên giống với id"><br><br>
+
+  <label for="password">Mật khẩu:</label><br>
+  <input type="password" id="password" name="thờng đặt tên giống với id"><br><br>
+
+  <button type="submit">Đăng nhập</button>
+</form>
+</body>
+</html>

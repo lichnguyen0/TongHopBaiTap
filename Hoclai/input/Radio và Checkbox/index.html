@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form với Radio và Checkbox</title>
+</head>
+<body>
+<!--Giải thích:
+Radio:
+  Các nút radio có cùng name="gender" để chỉ được chọn một.
+required bắt buộc chọn ít nhất một giới tính.
+Checkbox:
+   Các checkbox có cùng name="hobbies" để gửi mảng sở thích được chọn.
+Người dùng có thể chọn nhiều hoặc không chọn sở thích nào.
+-->
+
+<h2>Chọn giới tính và sở thích</h2>
+
+<form action="#" method="post">
+    <p>Giới tính:</p>
+    <input type="radio" name="gender" value="male" checked>Male<br>
+    <input type="radio" name="gender" value="female"> Nữ<br><br>
+
+    <p>Sở thích:</p>
+    <input type="checkbox" name="hobby" value="music"> Nghe nhạc<br>
+    <input type="checkbox" name="hobby" value="reading"> Đọc sách<br>
+    <input type="checkbox" name="hobby" value="travel"> Du lịch<br><br>
+
+    <input type="submit" value="Gửi">
+</form>
+
+
+
+</body>
+</html>

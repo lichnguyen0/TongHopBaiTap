@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label cơ bản</title>
+</head>
+<body>
+<!--
+Thẻ <label> được dùng để gắn nhãn (label) cho các trường nhập liệu như <input>, <textarea>, <select>…
+trong một biểu mẫu HTML (form). Nói cách khác, thẻ <label> giúp người dùng biết họ cần điền gì vào ô nhập,
+và cải thiện khả năng truy cập (accessibility),đặc biệt đối với các công cụ hỗ trợ như trình đọc màn hình.
+
+    Nhiệm vụ chính của thẻ <label>:
+
+1. Mô tả cho ô nhập liệu:	Cung cấp thông tin rõ ràng cho người dùng về mục đích của ô nhập liệu.
+2. Tăng khả năng truy cập:	Giúp các thiết bị hỗ trợ (như trình đọc màn hình) hiểu nội dung form để hỗ trợ người khiếm thị.
+3. Liên kết với input:	Khi nhấp vào label, con trỏ sẽ tự động focus vào ô nhập liệu tương ứng (nếu có for).
+4. Tăng trải nghiệm người dùng:	Người dùng dễ nhấp và sử dụng form hơn trên cả máy tính và thiết bị cảm ứng.
+
+Giải thích:
+Thẻ <label> dùng với thuộc tính for, liên kết với id của thẻ <input> tương ứng.
+Nhấn vào dòng chữ "Tên đăng nhập" hay "Mật khẩu" cũng sẽ tự động đưa con trỏ vào
+ô nhập liệu — đây là hành vi mặc định và đúng chuẩn.-->
+
+<form action="#" method="post">
+    <label for="ten"> Tên đăng nhập</label> <br>
+    <input type="text" id="ten" name="tenyou"> <br>
+
+    <label for="matkhau" >Mật khẩu</label> <br>
+    <input type="password" id="matkhau" name="matkhau"> <br>
+
+    <button type="submit">Đăng nhập</button>
+    <br>
+</form>
+</body>
+</html>

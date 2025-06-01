@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân biệt <div> và <span></title>
+  <style>
+    div {
+      display: inline;
+      background-color: lightblue;
+
+    }
+    span {
+      background-color: lightgreen;
+
+    }
+  </style>
+</head>
+<body>
+<p>
+  Đây là một phần nằm trong
+<div>thẻ div</div>    <!-- đây là phần nằm trong thẻ div-->
+và đây là một phần nằm trong
+<span>thẻ span</span>.  <!-- đây là phần nằm trong thẻ span-->
+</p>
+  <!--
+  Khái niệm div: là một phần tử block-level (khối), tức là nó chiếm toàn bộ chiều ngang của vùng chứa và luôn bắt đầu trên một dòng mới.
+  Nhiệm vụ:
+  Dùng để nhóm các phần tử HTML lại với nhau thành một khối để dễ dàng quản lý, sắp xếp, hoặc áp dụng CSS/JavaScript lên toàn bộ nhóm đó.
+  Thường dùng để xây dựng cấu trúc trang web, chia layout thành các phần như header, footer, sidebar, content...
+  Không mang ý nghĩa nội dung, chỉ dùng để cấu trúc và trình bày.
+
+ ví dụ:
+
+ <div class="container">
+  <h1>Tiêu đề</h1>
+  <p>Đoạn văn bản...</p>
+</div>
+
+
+Khái niệm span: span là phần tử inline-level (nội tuyến), tức là nó chỉ chiếm đúng phần kích thước của nội dung bên trong và không tạo dòng mới.
+Nhiệm vụ:
+Dùng để bọc một đoạn nhỏ trong dòng văn bản hoặc một phần tử inline khác để áp dụng CSS hoặc xử lý bằng JavaScript mà không làm thay đổi cấu trúc khối.
+Thường dùng để thay đổi kiểu dáng, màu sắc, hoặc định dạng từng phần nhỏ trong câu/chữ.
+
+ví dụ đoạn code này:
+<div class="container">   //  class để liên kết với css còn container là  tên của class
+  <h1>Tiêu đề</h1>
+  <p>Đoạn văn bản...</p>
+</div>
+
+/nếu sử dụng div để thiết kế trang trí cho đẹp chỉ cần gọi tên của class trên css
+ là nó chỉnh sửa đồng bộ tất cả những thứ trong div, còn không sử dụng div thì phải gán từng thành phần như h1, p,.vv
+
+
+
+<p>Đây là một <span style="color:red;">từ quan trọng</span> trong câu.</p>
+--------------------
+TÓM LẠI: span và div tương tự nhau div dùng để bọc phần lớn hơn  đoạn văn, hình ảnh, form, menu,...
+ tạo thành các khối riêng biệt trong layout., span dùng để bọc phần nhỏ hơn thường dùng để gom nhóm nhỏ
+  trong dòng, ví dụ để đánh dấu, tô màu, hoặc thao tác một vài từ trong đoạn văn.
+  mục đích của nó là Áp dụng CSS dễ dàng, Điều khiển bố cục và layout, Tương tác với JavaScript
+ví dụ:
+
+  -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo một textarea(vùng văn bản) cơ bản</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 100px;
+            resize: vertical; /* Cho phép người dùng thay đổi chiều cao, không thay đổi chiều rộng */
+            font-size: 16px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<!--Khái niệm của thẻ textarea trong HTML:
+textarea là thẻ HTML dùng để tạo một ô nhập liệu dạng vùng văn bản nhiều dòng trong form.
+Người dùng có thể nhập hoặc chỉnh sửa đoạn văn bản dài, khác với input type="text" chỉ nhập được một dòng.
+
+ Sự khác nhau giữa <textarea> và <input> trong HTML.
+ <input type="text"> Chức năng Nhập dữ liệu một dòng, <textarea> Nhập dữ liệu nhiều dòng (mô tả, bình luận, tin nhắn...)
+Cú pháp textarea: <textarea name="" id= "" ....</textarea>
+
+-->
+
+<body>
+<form>
+    <label for="comment">Nhập văn bản</label> <br>
+    <textarea name="comment" id="comment" placeholder="Note tại đây"></textarea>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input với Date, Color, Range</title>
+</head>
+<body>
+<!--Giải thích:
+date:	Chọn ngày sinh từ lịch
+color:	Chọn màu (hiển thị bảng màu)
+range:	Thanh kéo để chọn giá trị từ 0 đến 10 -->
+
+<h2>Thông tin thêm</h2>
+<form action="#" method="post">
+    <!-- ngày sinh-->
+    <label for="daTe">Ngày sinh</label> <br>
+    <input type="date" id="daTe" name="daTe"> <br>
+    <!--Màu yêu thích-->
+    <label for="Color">Chọn màu yêu thích</label> <br>
+    <input type="color" id="Color" name="Color"> <br>
+    <!-- Độ hài lòng-->
+    <label for="Hai long"> Dộ hai lòng từ 0 - 10 </label> <br>
+    <input type="range" id="Hai long" name="Hai long"> <br>
+    <button type="submit"> Gửi</button>
+</form>
+</body>
+</html>

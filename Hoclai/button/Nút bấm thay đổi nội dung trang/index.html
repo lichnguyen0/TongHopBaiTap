@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nút bấm thay đổi nội dung trang</title>
+</head>
+<body>
+<!-- Giải thích:
+<p id="thongBao">: đoạn văn có id để JavaScript dễ tìm đến.
+
+onclick="doiNoiDung()": gán sự kiện click cho nút.
+
+Trong hàm doiNoiDung():
+
+document.getElementById(...) lấy thẻ <p>
+
+.innerText = "..." thay đổi nội dung văn bản.
+
+ Bạn có thể thay innerText bằng innerHTML nếu muốn thay cả HTML bên trong.
+-->
+
+<p id="bimat"></p>
+<button onclick="doinoidung()">Bấm tôi</button>
+
+<script>
+  function doinoidung() {
+    document.getElementById("bimat").innerText = "GOOD MORNING";
+  }
+</script>
+</body>
+</html>

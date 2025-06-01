@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cho phép chọn nhiều lựa chọn</title>
+</head>
+<body>
+<!--
+Giải thích:
+multiple: cho phép người dùng chọn nhiều lựa chọn cùng lúc, người dùng phải giữ Ctrl (Windows) hoặc ⌘ Command (Mac).
+size="5": hiển thị sẵn cả 5 lựa chọn.
+name="subjects[]": khi gửi form, các lựa chọn được gửi lên dưới dạng mảng (array),
+ví dụ:
+subjects[]=toan
+subjects[]=ly
+subjects[]=hoa
+-->
+<form>
+  <label for="subjects">Chọn môn học yêu thích:</label><br>
+  <select id="subjects" name="subjects[]" multiple size="5">
+    <option value="toan">Toán</option>
+    <option value="van">Văn</option>
+    <option value="anh">Anh</option>
+    <option value="ly">Lý</option>
+    <option value="hoa">Hóa</option>
+  </select><br><br>
+
+  <button type="submit">Gửi</button>
+</form>
+</body>
+</html>

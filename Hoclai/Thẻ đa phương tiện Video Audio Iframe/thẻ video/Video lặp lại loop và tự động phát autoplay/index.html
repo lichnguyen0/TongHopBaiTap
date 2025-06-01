@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video lặp lại (loop) và tự động phát (autoplay)</title>
+</head>
+<body>
+<!-- Giải thích thuộc tính:
+
+autoplay:	Tự động phát khi trang vừa tải
+loop:	Khi phát xong thì phát lại từ đầu
+muted:	Bắt buộc nếu muốn autoplay hoạt động ổn định
+controls:	Hiển thị thanh điều khiển video
+-->
+
+<h2>Video tự phát và lặp lại</h2>
+
+<video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        width="640"
+        height="360"
+        autoplay
+        loop
+        muted
+        controls>
+    Trình duyệt của bạn không hỗ trợ video.
+</video>
+</body>
+</html>

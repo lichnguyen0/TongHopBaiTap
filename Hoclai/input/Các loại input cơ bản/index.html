@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>: Các loại input cơ bản</title>
+</head>
+<body>
+<form>
+  <!-- Giải thích:
+Họ và tên:'text' Nhập chuỗi chữ thông thường
+Email: 'email' Nhập đúng định dạng email
+Mật khẩu: 'password' Nhập mật khẩu, ẩn ký tự
+Tuổi: 'number' Chỉ nhập được số (có thể đặt min/max)
+-->
+
+  <label>Họ tên:</label>
+  <input type="text" name="fullname"><br><br>
+
+  <label>Mật khẩu:</label>
+  <input type="password" name="password"><br><br>
+
+  <label>Email:</label>
+  <input type="email" name="email"><br><br>
+
+  <label>Tuổi:</label>
+  <input type="number" name="age" min="1" max="120"><br><br>
+
+  <input type="submit" value="Gửi">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thiết lập <textarea> không thể chỉnh sửa</title>
+</head>
+<body>
+<!-- Giải thích:
+readonly: khiến người dùng không thể chỉnh sửa nội dung trong <textarea>, nhưng vẫn có thể bôi đen, sao chép.
+Khác với disabled, textarea readonly vẫn được gửi lên server khi submit form (nếu có name).-->
+
+
+<h3>Thông báo hệ thống</h3>
+
+<forrm>
+  <textarea name="mama" id="mama" cols="30" rows="10" readonly>Hệ thống sẽ bảo trì vào lúc 22h tối nay.
+Vui lòng lưu lại công việc trước thời điểm đó.</textarea>
+</forrm>
+</body>
+</html>

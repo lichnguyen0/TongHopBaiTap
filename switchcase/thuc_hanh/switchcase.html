@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+<input type="number" id="lenh">
+<button onclick="bam()"> Tính số ngày</button>
+<p id="result"></p>
+<script>
+    let thang1 ='1';
+    let thang2 ='2';
+    let thang3 ='3';
+    let thang4 ='4';
+    let thang5 ='5';
+    let thang6 ='6';
+    let thang7 ='7';
+    let thang8 ='8';
+    let thang9 = '9';
+    let thang10 = '10';
+    let thang11 = '11';
+    let thang12 = '12';
+    function bam() {
+        let num = document.getElementById('lenh').value;
+        switch (num) {
+            case thang1:
+            case thang3:
+            case thang5:
+            case thang7:
+            case thang8:
+            case thang10:
+            case thang12:
+                document.getElementById('result').innerHTML = "Tháng"+num+"có 31 ngày";
+                break;
+            case thang4:
+            case thang6:
+            case thang9:
+            case thang11:
+                document.getElementById('result').innerHTML= "tháng"+num+"có 30 ngày";
+                break;
+            case thang2:
+            document.getElementById('result').innerHTML = "tháng"+num+"có 28 hoặc29 ngày"
+            break;
+            default:
+                document.getElementById("result").innerHTML="Vui lòng nhập số vào";
+        }
+
+    }
+</script>
+</body>
+</html>

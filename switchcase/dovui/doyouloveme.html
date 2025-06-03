@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng vui DoYouLoveMe</title>
+</head>
+<body>
+
+<div id="question">Do You Love Me?</div>
+
+<button id="yesBtn">YES</button>
+<button id="noBtn">NO</button>
+
+<script>
+    // Khi click YES
+    document.getElementById("yesBtn").onclick = function() {
+        alert("<3");
+    };
+
+    // Khi rê chuột vào NO => đổi vị trí ngẫu nhiên
+    document.getElementById("noBtn").onmouseover = function() {
+        const btn = document.getElementById("noBtn");
+        const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+        const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+        btn.style.left = x + "px";
+        btn.style.top = y + "px";
+    };
+</script>
+
+</body>
+</html>

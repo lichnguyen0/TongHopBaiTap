@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2:</title>
+    <!--Viết chương trình  cho phép nhập hai phân số và kiểm tra xem 2 phân số đó có bằng nhau hay không.
+      xây dựng hàm nhận vào bốn tham số lần lượt là tử số, mẫu số của từng  phân số, thực hiện kiểm tra xem hai phân số c băn nhau không-->
+
+</head>
+<body>
+<script>
+    function sosanhPhS(tuso1, mauso1, tuso2, mauso2) {
+        return tuso1 * mauso2 === tuso2 * mauso1;
+    }
+    let tuso1 = parseInt(prompt("Nhập tử số phân số thứ nhất:"));
+    let mauso1 = parseInt(prompt("Nhập mẫu số phân số thứ nhất:"));
+    while (isNaN(tuso1) || isNaN(mauso1) || mauso1 === 0) {
+        alert("Giá trị không đúng, nhập lại.");
+        tuso1 = parseInt(prompt("Nhập tử số phân số thứ nhất:"));
+        mauso1 = parseInt(prompt("Nhập mẫu số phân số thứ nhất:"));
+    }
+    let tuso2 = parseInt(prompt("Nhập tử số phân số thứ hai:"));
+    let mauso2 = parseInt(prompt("Nhập mẫu số phân số thứ hai:"));
+    while (isNaN(tuso2) || isNaN(mauso2) || mauso2 === 0) {
+        alert("Giá trị không hợp đúng, nhập lại.");
+        tuso2 = parseInt(prompt("Nhập tử số phân số thứ hai:"));
+        mauso2 = parseInt(prompt("Nhập mẫu số phân số thứ hai:"));
+    }
+    let ketQua = sosanhPhS(tuso1, mauso1, tuso2, mauso2);
+    document.write("Phân số 1: " + tuso1 + "/" + mauso1 + "<br>");
+
+    document.write("Phân số 2: " + tuso2 + "/" + mauso2 + "<br>");
+
+    document.write(`<h3>Hai phân số bằng nhau? <strong>${ketQua}</strong></h3>`);
+</script>
+</body>
+</html>

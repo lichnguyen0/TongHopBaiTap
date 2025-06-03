@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1:</title>
+</head>
+<body>
+<!-- Nhập từ bàn phím mảng số nguyên a gồm n phần tử (n<=50),
+     đưa ra màn hình mảng vừa nhập vào và 1 mảng mới b bao gồm tất cả các số nguyên tố của mảng a.-->
+
+<script>
+    function nhapSo(n) {
+        if (n < 2) return false;
+        for (let i = 2; i * i <= n; i++) {
+            if (n % i === 0) return false;
+        }
+        return true;
+    }
+
+    let n = parseInt(prompt("Nhập số lượng phần tử của mảng"));
+    while (isNaN(n) || n <= 0 || n > 50) {
+        n = parseInt(prompt("Nhập lại số phần tử hợp lệ <= 50"))
+    }
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        let giaTri = parseInt(prompt(" thêm phần tử vào mảng a " + i + ""));
+        while (isNaN(giaTri)) {
+            giaTri = parseInt(prompt("Giá trị sai nhập lại" + i))
+        }
+        a.push(giaTri);
+    }
+    document.write("Mảng a:[");
+    for (let i = 0; i < a.length; i++) {
+        document.write(a[i]);
+        if (i < a.length - 1) document.write(",");
+    }
+    document.write("]<br>");
+
+    let b = [];
+    for (let i = 0; i < a.length; i++) {
+        if (nhapSo(a[i])) {
+            b.push(a[i]);
+        }
+    }
+    document.write("Mảng b (số nguyên tố): [");
+    for (let i = 0; i < b.length; i++) {
+        document.write(b[i]);
+        if (i < b.length - 1) document.write(", ");
+    }
+    document.write("]");
+
+
+</script>
+
+</body>
+</html>

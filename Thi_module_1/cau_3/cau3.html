@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3:</title>
+</head>
+<body>
+<h3>Quản lý sổ tiết kiệm</h3>
+
+<div>
+  <label>Mã sổ(Max 5 ký tự)"</label> <br>
+  <input type="text" id="maSo"> <br>
+
+  <label>Loại tiết kiệm (Max 10 ký tự):</label> <br>
+  <input type="text" id="loaiTietKiem"> <br>
+
+  <label>Họ và tên khách hàng (Max 30 ký tự):</label><br>
+  <input type="text" id="hoTen"> <br>
+
+  <label>CMND (số):</label> <br>
+  <input type="number" id="cmnd"> <br>
+
+  <label>Ngày mở sổ (yyyy-mm-dd):</label> <br>
+  <input type="date" id="ngayMo"> <br>
+
+  <label>Số tiền gửi:</label> <br>
+  <input type="number" id="soTien"> <br>
+
+  <button onclick="themSoTietKiem()">Thêm</button>
+  <div id="error" class="error"> </div>
+</div>
+
+<table id="bangDS">
+  <thead>
+  <tr>
+    <th>Mã sổ</th>
+    <th>Loại</th>
+    <th>Họ tên</th>
+    <th>CMND</th>
+    <th>Ngày mở</th>
+    <th>Số tiền</th>
+    <th>Hành động</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<script src="cau_3.js"></script>
+
+</body>
+</html>
